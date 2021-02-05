@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "OldFilesChecker": {
+      "commandName": "Project",
+      "commandLineArgs": "--folder-path D:\\SQL-Respaldo\\Local --minimum-files 3 --old-files 1 --extension bak"
+    }
+  }
+}
