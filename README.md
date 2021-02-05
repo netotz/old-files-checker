@@ -1,2 +1,3 @@
 # old-files-checker
-Programa para eliminar archivos viejos dadas ciertas condiciones.
+
+Program to delete old files in a directory according to some conditions. 
