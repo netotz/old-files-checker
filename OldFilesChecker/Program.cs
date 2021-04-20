@@ -41,8 +41,8 @@ namespace OldFilesChecker {
             }
 
             foreach (var file in files[..old]) {
+                Console.WriteLine($"Delete file '{file.Name}'.");
                 file.Delete();
-                Console.WriteLine($"Deleted file '{file.Name}'.");
             }
 
 
@@ -56,8 +56,8 @@ namespace OldFilesChecker {
                 .Where(f => (DateTime.Now - f.LastWriteTime).TotalDays >= daysOld)
                 .ToArray();
             foreach (var folder in oldestFolders) {
+                Console.WriteLine($"Delete folder '{folder.Name}' ({folder.LastWriteTime}).");
                 folder.Delete(true);
-                Console.WriteLine($"Deleted folder '{folder.Name}' ({folder.LastWriteTime}).");
             }
 
             Console.WriteLine($"Total deleted folders: {oldestFolders.Length}");
