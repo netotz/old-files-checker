@@ -6,7 +6,7 @@
     },
     "Check folders": {
       "commandName": "Project",
-      "commandLineArgs": "--directory-path D:\\EmbarquesFotos --days-old 30 --extension jpg",
+      "commandLineArgs": "--directory-path D:\\EmbarquesFotos --days-old 30",
       "nativeDebugging": false
     }
   }
