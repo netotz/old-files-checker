@@ -2,7 +2,12 @@
   "profiles": {
     "OldFilesChecker": {
       "commandName": "Project",
-      "commandLineArgs": "--folder-path D:\\SQL-Respaldo\\Local --minimum-files 3 --old-files 1 --extension bak"
+      "commandLineArgs": "--directory-path D:\\SQL-Respaldo\\Local --minimum-files 3 --old-files 1 --extension bak"
+    },
+    "Check folders": {
+      "commandName": "Project",
+      "commandLineArgs": "--directory-path D:\\EmbarquesFotos --days-old 30 --extension jpg",
+      "nativeDebugging": false
     }
   }
 }
