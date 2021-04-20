@@ -56,7 +56,7 @@ namespace OldFilesChecker {
                 .Where(f => (DateTime.Now - f.LastWriteTime).TotalDays >= daysOld)
                 .ToArray();
             foreach (var folder in oldestFolders) {
-                folder.Delete();
+                folder.Delete(true);
                 Console.WriteLine($"Deleted folder '{folder.Name}' ({folder.LastWriteTime}).");
             }
 
